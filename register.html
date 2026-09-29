@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home</title>
+</head>
+<body>
+    <form action="#">   
+        <div class="grid-container">
+            <div class="header"></div>   
+                <div class="navbar">
+                    <a href="index.html">หน้าแรก</a>
+                    <a href="register.html">สมัครเรียน</a>                
+                    <a href="contact.html">ติดต่อเรา</a>                
+                </div>    
+        
+            <div class="left">
+                <div class="text-lg">ลงทะเบียนเรียน </div>
+                    <div class="text-sm">
+                   
+                        <h3>1.การเลือกหลักสูตร</h3>
+                            <p><label for="register">รอบการสมัคร</label></p>
+                                <select name="register" id="register" required>
+                                    <option value="#">--กรุณาเลือกรอบการสมัคร--</option>
+                                    <option value="Portfolio">Portfolio</option>
+                                    <option value="Quota">Quota</option>
+                                    <option value="Admission">Admission</option>
+                                </select>
+                            <h3>2.ข้อมูลส่วนตัว</h3>
+                            <p>
+                                <label for="select">ชื่อ-นามสกุล(ไทย)</label>
+                                    <input type="text" id="select" name="username" placeholder="ชื่อ-นามสกุล"required>
+                                <p><label for="select">เลขบัตรประชาชน</label>
+                                    <input type="text" id="select" name="id"placeholder="เลขบัตรประชาชน 13 หลัก" pattern="[0-9]{13}" maxlength={13} required>
+                                <p><label for="select">เบอร์โทรศัพท์</label>
+                                    <input type="text" id="select" name="telelophone"placeholder="กรุณากรอกเบอร์โทรศัพท์"required>
+                    
+                            <h3>3.ประวัติการศึกษา</h3>
+                            <p><label for="register">วุฒิการศึกษาเดิม</label></p>
+                                <select name="register" id="register">
+                                    <option value="#">--กรุณาเลือกวุฒิการศึกษาเดิม--</option>
+                                    <option value="M6">มัธยมศึกษาปีที่6</option>
+                                    <option value="PVC">ปวช.</option>
+                                    <option value="PVS">ปวส.</option>
+                                </select>
+                            <h3>4.อัปโหลดเอกสาร</h3>
+                            <p><label for="myfile">รูปถ่ายขนาด2นิ้ว</label>
+                                    <input type="file" id="photo" name="photo">
+                            <p><label for="myfile">สำเนาบัตรประชาชน</label>
+                                    <input type="file" id="idcopy" name="idcopy">
+                            <p><label for="myfile">ใบ รบ.</label>
+                                    <input type="file" id="certificate" name="certificate">
+                    </div>          
+            </div>
+            <div class="right">
+                <form action="#">
+                    <br><br><p><label for="register">คณะ</label></p>
+                        <select name="register" id="register" required>
+                        <option value="#">--กรุณาเลือกคณะ--</option>
+                        <option value="group1">คณะเทคโนโลยีและการจัดการอุตสาหกรรม</option>
+                        <option value="group2">คณะบริหารธุรกิจและอุตสาหกรรมบริการ</option>
+                        <option value="group3">คณะอุตสาหกรรมเกษตรดิจิทัล</option>
+                        </select>
+                    <p><br><br><label for="select">Name-Surname(English)</label>
+                        <input type="text" id="select" name="username" placeholder="Name-Surname" required>
+
+                        <p><label for="birthday">Birthday:</p>
+                            <input type="date" id="birthday" name="birthday" required>
+                            </label>  
+
+                        <p><label for="select">Gmail</label>
+                            <input type="text" id="select" name="gamil" placeholder="yourname@gmail.com"register>
+            
+            </div>   
+    
+            <input type="submit" value="Submit" class="submit-btn">
+            <input type="reset" value="Reset" class="reset-btn">
+
+
+            <div class="footer"></div>
+         </div>
+   </form>
+
+
+
+</body>
+</html>
