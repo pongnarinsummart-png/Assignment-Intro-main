@@ -188,7 +188,7 @@ label[for="register"] {
   width: 100%;
   max-width: 1450px;
   height: 450px;
-  border-radius: 8px; /* ปรับมุมโค้งตามใจชอบ */
+  border-radius: 8px; 
   display: block;
   margin: 0 auto;
 }
